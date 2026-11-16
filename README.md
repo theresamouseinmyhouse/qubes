@@ -20,7 +20,7 @@ Open `index.html` and search for each token below. The full list is also in a co
 | `PRINT_AND_PLAY_PDF_URL` | Print-and-play rulebook PDF link |
 | `CUBE_TEMPLATE_URL` | Cube template / dice-sticker guide link |
 | `CONTACT_EMAIL` | Your email (appears twice: in `mailto:` and the visible text) |
-| `SITE_URL` | Published site address, e.g. `https://<user>.github.io/<repo>`. Used for the link-preview image, which must be an absolute URL. |
+| `SITE_URL` | Done: `https://theresamouseinmyhouse.github.io/qubes`. If the repo is renamed, update the `og:image` URL in `index.html`. |
 | `[LOCATION / AVAILABILITY]` | Where and when in-person sessions happen |
 | `[FREE / THANK-YOU GIFT]` | Whether it's free, or what testers get |
 | `[YOUR NAME]` | Your name, for the footer |
