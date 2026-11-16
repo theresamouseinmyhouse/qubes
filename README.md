@@ -27,13 +27,15 @@ Open `index.html` and search for each token below. The full list is also in a co
 
 When you replace a bracketed placeholder, you can also drop its `<span class="todo">` wrapper.
 
-**Cubes photo:** add `assets/cubes.png` (about 1200px wide, compressed), then swap the dashed placeholder box in the "What is QUBES?" section for the `<img>` tag given in the TODO comment above it.
+**Cubes photo:** `assets/cubes.jpg` (1200px wide, metadata stripped). Replace the file to change it, and keep the `width`/`height` in `index.html` matching.
 
 ## Print & Play rulebook (`rules/`)
 
-`rules/index.html` is a print-friendly copy of the rulebook for remote playtesters, rewritten for paper spinners instead of cubes and stickers. **The Figma file is the master copy.** When the Figma rules change, update `rules/index.html` to match. `rules/SPINNER-CHANGES.md` lists every place the spinner edition differs from Figma.
+Three editions, all built from the same text: `rules/compact.html` (8 pages plus a spinner sheet, the main download), `rules/index.html` (full size, 22 pages), and `rules/index.html?2up` (the full pages two per landscape sheet, without the spinner pages).
 
-Each `<section class="page">` is one printed page, sized to fit both Letter and A4. After editing, rebuild the four PDFs in `downloads/` (Letter and A4, full rulebook and spinner pages only) by printing `rules/` from Chrome, or with any headless-Chrome PDF script. Check that every page still fits on one sheet.
+`rules/index.html` is a print-friendly copy of the rulebook for remote playtesters, rewritten for paper spinners instead of cubes and stickers. **The Figma file is the master copy.** When the Figma rules change, update `rules/index.html` and `rules/compact.html` to match. `rules/SPINNER-CHANGES.md` lists every place the spinner edition differs from Figma.
+
+Each `<section class="page">` is one printed page, sized to fit both Letter and A4. After editing, rebuild the PDFs in `downloads/` (compact, 2-up, full and spinners-only, each in Letter and A4) by printing `rules/` from Chrome, or with any headless-Chrome PDF script. Check that every page still fits on one sheet.
 
 The page is `noindex` and is linked only from the "Playing remotely?" section, so the home page stays spoiler-free.
 

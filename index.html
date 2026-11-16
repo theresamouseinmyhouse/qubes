@@ -11,12 +11,12 @@
     FEEDBACK_FORM_URL        link to the post-session feedback form
     PRINT_AND_PLAY_PDF_URL   done: downloads/ (built from rules/, see README)
     CUBE_TEMPLATE_URL        done: downloads/qubes-spinners-*.pdf
+    cubes photo              done: assets/cubes.jpg
     CONTACT_EMAIL            done: hello@qubesgame.com (Cloudflare Email Routing)
     SITE_URL                 done: https://qubesgame.com
     [LOCATION / AVAILABILITY]  where and when in-person sessions happen
     [FREE / THANK-YOU GIFT]  what testers get / whether it costs anything
     [YOUR NAME]              your name for the footer
-    assets/cubes.png         a photo of the cubes and stickers (see TODO below)
 
     Unfilled links show a yellow "TODO" tag on the page, and bracketed
     text shows with a dashed yellow box, so nothing slips through.
@@ -103,11 +103,7 @@
             <p>As you play, kids add stickers to their cubes, so their characters grow with them.</p>
             <p>Every roll moves the story forward. Nobody loses, and nobody gets left out.</p>
           </div>
-          <!-- TODO: add assets/cubes.png (a photo of the cubes and stickers), then replace this box with:
-               <img src="assets/cubes.png" alt="The QUBES story cubes and a sheet of symbol stickers" width="1200" height="900" loading="lazy"> -->
-          <div class="placeholder-art" role="img" aria-label="Placeholder for a photo of the QUBES cubes and stickers">
-            Photo of the cubes and stickers coming soon
-          </div>
+          <img class="photo" src="assets/cubes.jpg" alt="The QUBES play-test box, rulebook, colored cubes and a sheet of lightning-bolt stickers on a checked tablecloth" width="1200" height="1123" loading="lazy">
         </div>
 
         <h3 style="margin-top:40px">A few of the friends kids can play</h3>
@@ -188,10 +184,17 @@
         <p class="lead narrow">Can't meet in person? You can play with a print-and-play kit at home and tell me how it went.</p>
 
         <div class="btn-row">
-          <a class="btn btn-blue" href="downloads/qubes-print-and-play-letter.pdf">Download the rulebook (PDF)</a>
-          <a class="btn" href="downloads/qubes-spinners-letter.pdf">Spinner pages only (PDF)</a>
+          <a class="btn btn-blue" href="downloads/qubes-rulebook-compact-letter.pdf">Download the rulebook (PDF, 9 pages)</a>
         </div>
-        <p class="narrow" style="margin-top:1rem">The rulebook includes the spinners, so one print job covers everything. On A4 paper? Get the <a href="downloads/qubes-print-and-play-a4.pdf">A4 rulebook</a> or <a href="downloads/qubes-spinners-a4.pdf">A4 spinners</a>, or <a href="rules/">print it straight from your browser</a>.</p>
+        <p class="narrow" style="margin-top:1rem">That's everything: the rules, the starter adventure, and a page of paper spinners on the last page. <a href="downloads/qubes-rulebook-compact-a4.pdf">A4 version</a>.</p>
+        <details class="more-downloads narrow">
+          <summary>Prefer the full-size book?</summary>
+          <ul>
+            <li>Two pages per sheet, 10 landscape sheets: <a href="downloads/qubes-rulebook-2up-letter.pdf">Letter</a> · <a href="downloads/qubes-rulebook-2up-a4.pdf">A4</a>. Print the spinners too: <a href="downloads/qubes-spinners-letter.pdf">Letter</a> · <a href="downloads/qubes-spinners-a4.pdf">A4</a>.</li>
+            <li>One page per sheet, 22 pages with spinners: <a href="downloads/qubes-print-and-play-letter.pdf">Letter</a> · <a href="downloads/qubes-print-and-play-a4.pdf">A4</a>.</li>
+            <li>Or read and print it in your browser: <a href="rules/compact.html">compact</a> · <a href="rules/">full</a>.</li>
+          </ul>
+        </details>
 
         <div class="remote-grid">
           <div class="card blue">

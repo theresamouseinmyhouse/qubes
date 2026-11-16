@@ -51,6 +51,7 @@
     <a href="../">← qubesgame.com</a>
     <a href="../downloads/qubes-print-and-play-letter.pdf">PDF (Letter)</a>
     <a href="../downloads/qubes-print-and-play-a4.pdf">PDF (A4)</a>
+    <a href="compact.html">Compact (8 pages)</a>
     <button type="button" onclick="window.print()">Print</button>
   </div>
 </header>
@@ -74,7 +75,7 @@
     <div><svg aria-hidden="true"><use href="#i-person"/></svg>Ages 4+</div>
     <div><svg aria-hidden="true"><use href="#i-clock"/></svg>15+ Minutes</div>
   </div>
-  <p class="foot">Your paper spinners are on the last two pages.</p>
+  <p class="foot"><span class="foot-full">Your paper spinners are on the last two pages.</span><span class="foot-2up">Print the spinner pages separately, at full size.</span></p>
 </section>
 
 <!-- 2. Quick start -->
@@ -484,7 +485,7 @@
 </section>
 
 <!-- 21. Print & play: make your spinners -->
-<section class="page" aria-label="Make your spinners">
+<section class="page full-only" aria-label="Make your spinners">
   <span class="eyebrow">Print &amp; Play</span>
   <h1>Make Your Spinners</h1>
   <p class="lead" style="margin-bottom:2.6cqw">This edition uses paper spinners instead of cubes and stickers. Each spinner has six spaces, just like a cube has six faces.</p>
@@ -526,7 +527,7 @@
 </section>
 
 <!-- 22. Spinner sheet -->
-<section class="page sheet" aria-label="Spinner sheet">
+<section class="page sheet full-only" aria-label="Spinner sheet">
   <h1>Your Spinners</h1>
   <p class="lead">Draw symbols in the dotted circles as the rules tell you. Print more of this page for more players.</p>
   <div class="spinners">
@@ -539,5 +540,22 @@
 </section>
 
 </main>
+<script>
+  // ?2up: print pages 1-20 two per landscape sheet. The spinner pages are left
+  // out (they're their own full-size download; half-size spinners are too small).
+  if (/[?&]2up(&|$)/.test(location.search)) {
+    document.body.classList.add('twoup');
+    var pages = Array.prototype.filter.call(document.querySelectorAll('main > .page'), function (p) {
+      return !p.classList.contains('full-only');
+    });
+    for (var i = 0; i < pages.length; i += 2) {
+      var spread = document.createElement('div');
+      spread.className = 'spread';
+      pages[i].parentNode.insertBefore(spread, pages[i]);
+      spread.appendChild(pages[i]);
+      if (pages[i + 1]) spread.appendChild(pages[i + 1]);
+    }
+  }
+</script>
 </body>
 </html>

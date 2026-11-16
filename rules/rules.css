@@ -406,3 +406,158 @@ strong.k-focus, strong.k-effort, strong.k-kind, strong.k-wild,
   .back { background: var(--cream); }
   .back .panel { border: 3px solid var(--ink); }
 }
+
+/* =====================================================================
+   Compact edition (compact.html): the same rules packed onto ~8 pages.
+   Everything is scoped to .compact so the full edition is untouched.
+   ===================================================================== */
+.compact .page {
+  padding: 5.5cqw 6cqw 5cqw;
+  --fs-eyebrow: max(12px, 1.9cqw);
+  --fs-h1: max(22px, 4.2cqw);
+  --fs-lead: max(15px, 2.45cqw);
+  --fs-h3: max(15px, 2.45cqw);
+  --fs-body: max(14px, 2.2cqw);
+  --fs-small: max(12px, 1.9cqw);
+  --gap: 1.4cqw;
+  --r: 1.8cqw;
+}
+.compact .page h1 { margin-bottom: 0.8cqw; }
+.compact .eyebrow { margin-bottom: 0.4cqw; }
+.compact .page .lead { margin-bottom: 1.8cqw; line-height: 1.35; }
+.compact .sec + .sec { margin-top: 3.4cqw; padding-top: 3cqw; border-top: 2px solid var(--line); }
+.compact .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.4cqw 4cqw; align-items: start; }
+.compact .grid2.tight { gap: var(--gap); }
+.compact .col > .sec + .sec { border-top: 0; padding-top: 0; }
+
+.compact .steps { gap: 1.6cqw; }
+.compact .steps li { grid-template-columns: 4.4cqw 1fr; gap: 1.8cqw; }
+.compact .steps .n { width: 4.4cqw; height: 4.4cqw; min-width: 22px; min-height: 22px; font-size: max(12px, 2.2cqw); }
+.compact .steps h3 { margin-bottom: 0.2cqw; }
+.compact .steps.plain .txt { font-size: var(--fs-body); }
+
+.compact .tile { --ts: max(30px, 6.4cqw); }
+.compact .tile.sm { --ts: max(24px, 4.6cqw); }
+.compact .tile-row { gap: 1.2cqw; justify-content: flex-start; margin: 1.6cqw 0; }
+.compact .tile-row .tile { --ts: max(24px, 4.6cqw); }
+
+.compact .card { gap: 2cqw; padding: 1.6cqw 2cqw; }
+.compact .card h3 { font-size: var(--fs-h3); margin-bottom: 0.2cqw; }
+.compact .card .sub, .compact .card .eg, .compact .card p { font-size: var(--fs-body); line-height: 1.3; }
+
+.compact .note, .compact .dark { margin-top: var(--gap); padding: 1.8cqw 2.2cqw; }
+.compact .note h4 { font-size: var(--fs-h3); }
+.compact .dark p { font-size: var(--fs-body); }
+.compact .dark .big { font-size: var(--fs-h3); }
+.compact .dark hr { margin: 1.2cqw 0; }
+.compact .dark ul { gap: 0.6cqw; }
+.compact .dark li { padding-left: 2.8cqw; }
+.compact .dark li::before { width: 1.2cqw; height: 1.2cqw; }
+
+.compact .page .section-label { margin: 2cqw 0 1.2cqw; font-size: var(--fs-small); }
+
+.compact .chat { gap: 1.4cqw; }
+.compact .msg { gap: 1.6cqw; }
+.compact .msg.n { grid-template-columns: 5cqw 1fr; }
+.compact .msg.p { grid-template-columns: 1fr 5cqw; }
+.compact .avatar { width: 5cqw; height: 5cqw; min-width: 24px; min-height: 24px; font-size: max(12px, 2.4cqw); }
+.compact .bubble { font-size: var(--fs-body); padding: 1.4cqw 2cqw; line-height: 1.35; }
+.compact .bubble .tag { margin-bottom: 0.3cqw; }
+.compact .spin-strip { grid-template-columns: 5cqw 1fr 15cqw; min-height: 9cqw; }
+.compact .spin-strip .side { font-size: var(--fs-small); }
+.compact .spin-strip .box { padding: 1cqw; gap: 1.4cqw; margin: 0.5cqw 0; }
+.compact .spin-strip .tile { --ts: max(24px, 5.4cqw); }
+.compact .spin-strip .result { font-size: var(--fs-body); }
+
+.compact .spin-list { display: grid; gap: 0.8cqw; }
+.compact .spin-list div { display: grid; grid-template-columns: auto 1fr; gap: 1.6cqw; align-items: center; padding: 0.9cqw 1.6cqw; border-radius: var(--r); background: var(--s); font-size: var(--fs-body); line-height: 1.3; }
+.compact .spin-list b { font-family: var(--display); font-weight: 600; color: var(--c); }
+.compact .spin-list .tile { --ts: max(22px, 3.8cqw); }
+.compact .twist-ideas { padding: 1.4cqw 2cqw; margin-top: var(--gap); }
+.compact .twist-ideas h4 { font-size: var(--fs-h3); margin-bottom: 0.3cqw; }
+.compact .twist-ideas p { line-height: 1.35; }
+
+.compact .scene-head { display: flex; justify-content: space-between; align-items: flex-start; }
+.compact .bells-inline { display: flex; gap: 1cqw; }
+.compact .bells-inline svg { width: 3cqw; height: 3cqw; min-width: 14px; min-height: 14px; color: var(--bubble); }
+.compact .bells-inline svg.on { color: var(--orange); }
+.compact .goal { font-size: var(--fs-body); margin-bottom: 1cqw; }
+.compact .here { margin-bottom: 1.2cqw; gap: 1cqw; }
+.compact .chip { font-size: var(--fs-small); padding: 0.8cqw 1.6cqw; }
+
+.compact .cast-row { gap: 1.2cqw; }
+.compact .cast-row .card { padding: 1.6cqw; gap: 0.5cqw; }
+.compact .cast-row .card h3 { font-size: var(--fs-h3); }
+.compact .npc { padding: 1.4cqw 2cqw; }
+.compact .scenes-row div { padding: 1.2cqw; font-size: var(--fs-body); }
+.compact .scenes-row .n { width: 3.8cqw; height: 3.8cqw; }
+
+.compact .masthead { display: flex; align-items: center; gap: 4cqw; padding-bottom: 2.6cqw; margin-bottom: 2.6cqw; border-bottom: 2px solid var(--line); }
+.compact .masthead img { width: 38cqw; }
+.compact .masthead .tag { font: 600 var(--fs-h3) / 1.2 var(--display); }
+.compact .masthead .edition { font: 800 var(--fs-small) / 1.3 var(--body); letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); margin-top: 0.4cqw; }
+.compact .masthead .facts-line { font: 700 var(--fs-body) / 1.3 var(--body); color: var(--muted); margin-top: 0.6cqw; }
+
+.compact .people { display: grid; grid-template-columns: 1fr 1fr; gap: 2cqw; }
+.compact .people h3 { font: 600 var(--fs-h3) / 1.2 var(--display); margin: 0; }
+.compact .people p { font-size: var(--fs-body); line-height: 1.3; }
+
+.compact .sheet-howto { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3cqw; align-items: start; margin-bottom: 2.4cqw; }
+.compact .sheet-howto ol { margin: 0; padding-left: 1.2em; font-size: var(--fs-body); line-height: 1.35; }
+.compact .sheet-howto .draw-key { grid-template-columns: repeat(4, 1fr); gap: 1cqw; }
+.compact .sheet-howto .draw-key .tile { --ts: max(24px, 5cqw); }
+.compact .sheet-howto .draw-key div { font-size: var(--fs-small); gap: 0.4cqw; }
+.compact .sheet-howto .draw-key b { font-size: var(--fs-small); }
+.compact .sheet .spinners { gap: 2cqw 3cqw; }
+.compact .sheet .spinner svg { width: 40cqw; height: 40cqw; }
+.compact .sheet .spinner .name { font-size: var(--fs-h3); }
+
+@media screen and (max-width: 560px) {
+  .compact .grid2, .compact .people, .compact .sheet-howto { grid-template-columns: 1fr; }
+  .compact .page { padding: 24px 16px; }
+}
+
+/* =====================================================================
+   2-up mode (index.html?2up): two rulebook pages side by side on each
+   landscape sheet. Pages 21-22 (spinners) are printed separately at
+   full size, because half-size spinners are smaller than a paperclip.
+   ===================================================================== */
+.foot-2up { display: none; }
+.twoup .foot-full { display: none; }
+.twoup .foot-2up { display: inline; }
+.twoup .page.full-only { display: none; }
+.spread { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+@page spread { size: landscape; margin: 0.3in; }
+@media print {
+  .twoup .spread { page: spread; flex-wrap: nowrap; gap: 0.2in; break-after: page; page-break-after: always; }
+  .twoup .spread:last-of-type { break-after: auto; page-break-after: auto; }
+  .twoup .spread .page { zoom: 0.68; margin: 0; break-after: auto; page-break-after: auto; border: 1px solid var(--line); }
+}
+
+/* Compact edition flows: sections never split, and the browser fills each page.
+   Only the spinner sheet is a fixed, full page of its own. */
+.compact .page { aspect-ratio: auto; overflow: visible; }
+.compact .page + .page:not(.sheet) { margin-top: -24px; border-top-left-radius: 0; border-top-right-radius: 0; padding-top: 0; }
+.compact .page:not(.sheet):has(+ .page:not(.sheet)) { border-bottom-left-radius: 0; border-bottom-right-radius: 0; padding-bottom: 3cqw; }
+.compact .page + .page:not(.sheet) > .sec:first-child,
+.compact .page + .page:not(.sheet) > .grid2:first-child { margin-top: 3.4cqw; padding-top: 3cqw; border-top: 2px solid var(--line); }
+@media print {
+  .compact .page { height: auto; break-after: auto; page-break-after: auto; padding: 0 6cqw; margin: 0 auto; }
+  .compact .page:first-of-type { padding-top: 2cqw; }
+  .compact .sec, .compact .grid2 > .col, .compact .msg, .compact .spin-strip, .compact .card,
+  .compact .dark, .compact .note, .compact .twist-ideas { break-inside: avoid; page-break-inside: avoid; }
+  .compact .page.sheet { height: 10.1in; break-before: page; page-break-before: always; padding: 5cqw 5cqw 4cqw; }
+  .compact .page + .page:not(.sheet) { margin-top: 0; }
+}
+@media print {
+  /* Let long sections split between their parts; keep headings with what follows. */
+  .compact .sec, .compact .grid2 > .col { break-inside: auto; page-break-inside: auto; }
+  .compact .grid2, .compact .steps li, .compact .spin-list, .compact .cast-row, .compact .scenes-row,
+  .compact .tile-row, .compact .people, .compact .two-up { break-inside: avoid; page-break-inside: avoid; }
+  .compact .eyebrow, .compact h1, .compact .lead, .compact .goal, .compact .here,
+  .compact .section-label, .compact .scene-head { break-after: avoid; page-break-after: avoid; }
+}
+.compact .grid2 + .sec { margin-top: 3.4cqw; padding-top: 3cqw; border-top: 2px solid var(--line); }
+@media print {
+  .compact .page { background: transparent; }
+}

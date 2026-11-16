@@ -52,3 +52,18 @@ Each line gives the page, the Figma text, and the spinner edition's text.
 
 - The four symbol meanings, the World odds (50%), Twists, the intro adventure and the cast are word for word.
 - The rulebook is laid out for Letter and A4 instead of its original page shape, so some line breaks differ from Figma.
+
+## Compact edition (`compact.html`)
+
+Same wording as the full spinner edition, packed onto 8 pages plus a spinner sheet. Layout differences from Figma:
+
+- The cover becomes a small masthead at the top of page 1.
+- **The back-cover quick reference is left out**, because it repeats the Quick Start and the Symbols.
+- The two example-of-play pages run as one conversation.
+- The Narrator characters' Wants / Feels / Says sit on one line each.
+- The scenes' spin ideas are one-line rows instead of cards. Sections can continue onto the next page.
+- "Make Your Spinners" is condensed into a short how-to at the top of the spinner sheet.
+
+## 2-up edition (`index.html?2up`)
+
+The full edition's pages 1–20, two per landscape sheet at about 68% size, with the spinner pages printed separately at full size.
