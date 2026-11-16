@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    ============================================================
+    PLACEHOLDERS TO FILL IN (search this file for each token)
+    ------------------------------------------------------------
+    SIGNUP_FORM_URL          link to the playtest sign-up form
+    FEEDBACK_FORM_URL        link to the post-session feedback form
+    PRINT_AND_PLAY_PDF_URL   link to the print-and-play rulebook PDF
+    CUBE_TEMPLATE_URL        link to the cube template / dice-sticker guide
+    CONTACT_EMAIL            your contact email (used in a mailto: link)
+    SITE_URL                 the published site address, for the link-preview image
+    [LOCATION / AVAILABILITY]  where and when in-person sessions happen
+    [FREE / THANK-YOU GIFT]  what testers get / whether it costs anything
+    [YOUR NAME]              your name for the footer
+    assets/cubes.png         a photo of the cubes and stickers (see TODO below)
+
+    Unfilled links show a yellow "TODO" tag on the page, and bracketed
+    text shows with a dashed yellow box, so nothing slips through.
+    ============================================================
+  -->
+  <title>QUBES: Help playtest a kids-first storytelling game</title>
+  <meta name="description" content="QUBES is a kids-first tabletop storytelling game for ages 4+. One grown-up tells the story, everyone else plays a character. We're looking for families to playtest it.">
+  <meta name="theme-color" content="#fff8ec">
+
+  <!-- Link previews (Discord, iMessage, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QUBES: Help playtest a kids-first storytelling game">
+  <meta property="og:description" content="Ages 4+ · 2+ players · 15+ minutes. One grown-up tells the story, everyone else plays a character. Sign up to playtest, in person or with a print-and-play kit.">
+  <!-- TODO: replace SITE_URL with the published address, e.g. https://<user>.github.io/<repo> -->
+  <meta property="og:image" content="SITE_URL/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The QUBES logo: five letter tiles above four colourful symbol cubes.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="preload" href="assets/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="QUBES, back to top">
+        <img src="assets/logo.png" alt="" width="759" height="185">
+      </a>
+      <nav aria-label="Sections">
+        <ul>
+          <li class="optional"><a href="#about">About</a></li>
+          <li><a href="#remote">Remote</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <img class="logo" src="assets/logo.png" alt="QUBES" width="759" height="185">
+        <h1>A kids-first tabletop storytelling game.</h1>
+        <p class="lead">One grown-up tells the story, and everyone else plays a character. Roll the cubes to see what happens next.</p>
+
+        <ul class="facts" aria-label="Game facts">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="7" r="4"/><path d="M4 21a8 8 0 0 1 16 0z"/></svg>
+            Ages 4+
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><circle cx="12" cy="6" r="3.2"/><circle cx="5" cy="9" r="2.4"/><circle cx="19" cy="9" r="2.4"/><path d="M6.5 20a5.5 5.5 0 0 1 11 0z"/><path d="M1 19a4 4 0 0 1 5-3.9A7 7 0 0 0 5 19z"/><path d="M23 19a4 4 0 0 0-5-3.9A7 7 0 0 1 19 19z"/></svg>
+            2+ players
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2.5"/></svg>
+            15+ minutes
+          </li>
+        </ul>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="SIGNUP_FORM_URL">Sign up to playtest</a>
+          <a class="btn" href="#remote">Playing remotely? Start here</a>
+        </div>
+
+        <img class="symbols" src="assets/symbols.png" alt="" width="585" height="149">
+      </div>
+    </section>
+
+    <!-- 2. What is QUBES? -->
+    <section id="about">
+      <div class="wrap">
+        <div class="two-col">
+          <div>
+            <span class="eyebrow">What is QUBES?</span>
+            <h2>A story you make up together</h2>
+            <p>QUBES comes with special story cubes and stickers. Kids pick a friendly character and help tell the story out loud, while one grown-up narrates.</p>
+            <p>As you play, kids add stickers to their cubes, so their characters grow with them.</p>
+            <p>Every roll moves the story forward. Nobody loses, and nobody gets left out.</p>
+          </div>
+          <!-- TODO: add assets/cubes.png (a photo of the cubes and stickers), then replace this box with:
+               <img src="assets/cubes.png" alt="The QUBES story cubes and a sheet of symbol stickers" width="1200" height="900" loading="lazy"> -->
+          <div class="placeholder-art" role="img" aria-label="Placeholder for a photo of the QUBES cubes and stickers">
+            Photo of the cubes and stickers coming soon
+          </div>
+        </div>
+
+        <h3 style="margin-top:40px">A few of the friends kids can play</h3>
+        <ul class="cast">
+          <li class="card red"><h3>Gus the Bus</h3><p>Kind, and always worried</p></li>
+          <li class="card blue"><h3>Tessa the Tram</h3><p>Organized and always on time</p></li>
+          <li class="card purple"><h3>Bonnie the Bulldozer</h3><p>Big, strong, and stubborn</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Looking for playtesters -->
+    <section id="playtest">
+      <div class="wrap narrow">
+        <span class="eyebrow">Playtesting</span>
+        <h2>We're looking for playtesters</h2>
+        <p class="lead">QUBES is brand new. Before it's finished, I'm testing it with real families to see what works and what doesn't.</p>
+        <p>We're testing the game, not you or your kids. If something goes sideways, that's the game's fault, and it's exactly what I need to know.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="SIGNUP_FORM_URL">Sign up to playtest</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. What a session looks like -->
+    <section id="session">
+      <div class="wrap narrow">
+        <span class="eyebrow">How it works</span>
+        <h2>What a session looks like</h2>
+        <ol class="steps">
+          <li><p>You get the game box, or a print-and-play kit.</p></li>
+          <li><p>A grown-up reads the rulebook and narrates. I don't explain the game beforehand, because how well the book teaches it is part of the test.</p></li>
+          <li><p>Play one short adventure, about 15–30 minutes. Stop whenever the kids are done.</p></li>
+          <li><p>Answer a few quick questions afterward (about 10 minutes).</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. What I'm asking of you -->
+    <section id="asking">
+      <div class="wrap narrow">
+        <span class="eyebrow">For grown-ups</span>
+        <h2>What I'm asking of you</h2>
+        <ul class="ticks">
+          <li>Read the rulebook yourself to learn the game.</li>
+          <li>Play the way you naturally would. There's no wrong way.</li>
+          <li>If you get confused, make a call and keep going. Where you get stuck is the most useful thing I can learn.</li>
+          <li>Please don't coach beyond what the book says.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. A note for kids -->
+    <section id="kids">
+      <div class="wrap narrow">
+        <div class="kids">
+          <p class="read-aloud">A note for kids (read it out loud!)</p>
+          <p>We're helping a game-maker find out what works! There are no wrong answers. If something is confusing or boring, telling them is a big help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. In-person sessions -->
+    <section id="in-person">
+      <div class="wrap narrow">
+        <span class="eyebrow">In person</span>
+        <h2>In-person sessions</h2>
+        <p><strong>Where and when:</strong> <span class="todo">[LOCATION / AVAILABILITY]</span></p>
+        <p>I'll sit nearby, watch quietly and take notes. I won't jump in to help. Afterward I'll ask a few short questions.</p>
+      </div>
+    </section>
+
+    <!-- 8. Remote playtesters -->
+    <section id="remote">
+      <div class="wrap">
+        <span class="eyebrow">Remote</span>
+        <h2>Playing remotely? Start here</h2>
+        <p class="lead narrow">Can't meet in person? You can play with a print-and-play kit at home and tell me how it went.</p>
+
+        <div class="btn-row">
+          <a class="btn btn-blue" href="PRINT_AND_PLAY_PDF_URL">Download the rulebook (PDF)</a>
+          <a class="btn" href="CUBE_TEMPLATE_URL">Download the cube template</a>
+        </div>
+
+        <div class="remote-grid">
+          <div class="card blue">
+            <h3>What you'll need</h3>
+            <ul class="ticks">
+              <li>A grown-up to narrate</li>
+              <li>At least one kid to play</li>
+              <li>Standard six-sided dice with labels, or the printable cube template</li>
+              <li>The printed rulebook (or a screen to read it on)</li>
+            </ul>
+          </div>
+          <div class="card purple">
+            <h3>While you play, jot down</h3>
+            <ul class="ticks boxes">
+              <li>How many minutes until the first roll</li>
+              <li>Every time you had to reread or guess at the rules</li>
+              <li>How the kids reacted when a roll didn't match</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn-green" href="FEEDBACK_FORM_URL">Submit feedback after your session</a>
+        </div>
+
+        <div class="note narrow">
+          <p><strong>Bonus:</strong> a short voice memo right after the game is a great extra. Your first impressions are the freshest ones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Privacy -->
+    <section id="privacy">
+      <div class="wrap narrow">
+        <span class="eyebrow">Privacy</span>
+        <h2>Your family's privacy</h2>
+        <ul class="ticks">
+          <li>I only note kids' ages and first names or nicknames.</li>
+          <li>Any recordings are only for my own notes, and I delete them afterward. Tell me if you'd rather I didn't record.</li>
+          <li>Please don't send photos of kids' faces.</li>
+          <li>This site has no tracking, no analytics and no cookies.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 10. Contact + FAQ -->
+    <section id="faq">
+      <div class="wrap narrow">
+        <span class="eyebrow">Questions</span>
+        <h2>Contact and FAQ</h2>
+        <p class="contact-line">Questions? Email me at <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+
+        <div class="faq">
+          <details>
+            <summary>Do I need any game experience?</summary>
+            <p>No. If you can read a picture book out loud, you can narrate QUBES. The rulebook should take you the rest of the way, and if it doesn't, that's what I want to find out.</p>
+          </details>
+          <details>
+            <summary>How long does it take?</summary>
+            <p>An adventure takes about 15–30 minutes, plus around 10 minutes of questions afterward. Stop whenever the kids are done.</p>
+          </details>
+          <details>
+            <summary>What ages is it for?</summary>
+            <p>Kids aged 4 and up, with a grown-up narrating. Older kids and adults are welcome to play too.</p>
+          </details>
+          <details>
+            <summary>Does it cost anything?</summary>
+            <p><span class="todo">[FREE / THANK-YOU GIFT]</span></p>
+          </details>
+          <details>
+            <summary>Can more than one kid play?</summary>
+            <p>Yes. QUBES is for 2 or more players: one narrator plus one or more kids, each playing their own character. Siblings and friends can all join in.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>QUBES is an early prototype. © 2026 <span class="todo">[YOUR NAME]</span></p>
+    </div>
+  </footer>
+</body>
+</html>
