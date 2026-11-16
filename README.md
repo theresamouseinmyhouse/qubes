@@ -19,7 +19,7 @@ Open `index.html` and search for each token below. The full list is also in a co
 | `FEEDBACK_FORM_URL` | Post-session feedback form link |
 | `PRINT_AND_PLAY_PDF_URL` | Print-and-play rulebook PDF link |
 | `CUBE_TEMPLATE_URL` | Cube template / dice-sticker guide link |
-| `CONTACT_EMAIL` | Your email (appears twice: in `mailto:` and the visible text) |
+| `CONTACT_EMAIL` | Done: `hello@qubesgame.com`, forwarded by Cloudflare Email Routing. |
 | `SITE_URL` | Done: `https://qubesgame.com` (custom domain, set by the `CNAME` file; DNS in Cloudflare). |
 | `[LOCATION / AVAILABILITY]` | Where and when in-person sessions happen |
 | `[FREE / THANK-YOU GIFT]` | Whether it's free, or what testers get |
