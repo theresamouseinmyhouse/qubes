@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    QUBES Print & Play rulebook.
+    The Figma file is the master copy of the rulebook. This page is a print-friendly
+    copy for remote playtesters, rewritten for paper spinners instead of cubes and
+    stickers (see SPINNER-CHANGES.md). When the Figma rules change, update this page too.
+    Linked only from the "Playing remotely?" section of the home page.
+  -->
+  <title>QUBES Print &amp; Play Rulebook</title>
+  <meta name="description" content="The QUBES print-and-play rulebook, with paper spinners. Prints on Letter or A4.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="preload" href="../assets/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-focus" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.2" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M14.6 14.6 20.2 20.2" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-effort" viewBox="0 0 24 24"><path d="M14.6 1.8 6.2 13.4h5.4L9.4 22.2l8.6-12h-5.5l2.1-8.4z" fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></symbol>
+  <symbol id="i-kind" viewBox="0 0 24 24"><path d="M12 21S2.6 15.3 2.6 8.9C2.6 5.9 4.9 3.6 7.8 3.6c1.8 0 3.3.9 4.2 2.4.9-1.5 2.4-2.4 4.2-2.4 2.9 0 5.2 2.3 5.2 5.3C21.4 15.3 12 21 12 21z" fill="currentColor"/></symbol>
+  <symbol id="i-wild" viewBox="0 0 24 24"><path d="M12 2.4l2.9 6.2 6.7.7-5 4.6 1.4 6.7L12 17.2l-6 3.4 1.4-6.7-5-4.6 6.7-.7z" fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-blank" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a1.6 1.6 0 0 1 1.6 1.6v.6a6.4 6.4 0 0 1 4.9 6.3V15l2 2.6v1.1h-17v-1.1l2-2.6v-4.5a6.4 6.4 0 0 1 4.9-6.3v-.6A1.6 1.6 0 0 1 12 2zM9.4 19.8h5.2a2.6 2.6 0 0 1-5.2 0z" fill="currentColor"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" fill="currentColor"/><path d="M4 21a8 8 0 0 1 16 0z" fill="currentColor"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="6" r="3.2"/><circle cx="5" cy="9" r="2.4"/><circle cx="19" cy="9" r="2.4"/><path d="M6.5 20a5.5 5.5 0 0 1 11 0z"/><path d="M1 19a4 4 0 0 1 5-3.9A7 7 0 0 0 5 19z"/><path d="M23 19a4 4 0 0 0-5-3.9A7 7 0 0 1 19 19z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M12 7v5l3.5 2.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+  <symbol id="spinner" viewBox="-100 -100 200 200">
+    <circle r="96" fill="#fff" stroke="#2a2240" stroke-width="3.5"/>
+    <g stroke="#2a2240" stroke-width="2.5">
+      <line x1="0" y1="0" x2="0" y2="-96"/><line x1="0" y1="0" x2="83.14" y2="-48"/><line x1="0" y1="0" x2="83.14" y2="48"/>
+      <line x1="0" y1="0" x2="0" y2="96"/><line x1="0" y1="0" x2="-83.14" y2="48"/><line x1="0" y1="0" x2="-83.14" y2="-48"/>
+    </g>
+    <g fill="none" stroke="#b9afa6" stroke-width="1.5" stroke-dasharray="4 4">
+      <circle cx="30" cy="-51.96" r="20"/><circle cx="60" cy="0" r="20"/><circle cx="30" cy="51.96" r="20"/>
+      <circle cx="-30" cy="51.96" r="20"/><circle cx="-60" cy="0" r="20"/><circle cx="-30" cy="-51.96" r="20"/>
+    </g>
+    <circle r="10" fill="#fff" stroke="#2a2240" stroke-width="2.5"/>
+    <circle r="2.8" fill="#2a2240"/>
+  </symbol>
+</svg>
+
+<header class="toolbar">
+  <div class="inner">
+    <span class="title">QUBES Print &amp; Play</span>
+    <a href="../">← qubesgame.com</a>
+    <a href="../downloads/qubes-print-and-play-letter.pdf">PDF (Letter)</a>
+    <a href="../downloads/qubes-print-and-play-a4.pdf">PDF (A4)</a>
+    <button type="button" onclick="window.print()">Print</button>
+  </div>
+</header>
+<p class="screen-note">Printing from here: choose your paper size and set scale to 100% (or “Actual size”). Turn on “Background graphics” for colour.</p>
+
+<main>
+
+<!-- 1. Cover -->
+<section class="page cover" aria-label="Cover">
+  <img class="logo" src="../assets/logo.png" alt="QUBES" width="759" height="185">
+  <p class="tag">A Kids First TTRPG</p>
+  <p class="edition">Print &amp; Play Edition</p>
+  <div class="tile-row" aria-hidden="true">
+    <span class="tile focus"><svg><use href="#i-focus"/></svg></span>
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+    <span class="tile wild"><svg><use href="#i-wild"/></svg></span>
+  </div>
+  <div class="facts">
+    <div><svg aria-hidden="true"><use href="#i-people"/></svg>2+ Players</div>
+    <div><svg aria-hidden="true"><use href="#i-person"/></svg>Ages 4+</div>
+    <div><svg aria-hidden="true"><use href="#i-clock"/></svg>15+ Minutes</div>
+  </div>
+  <p class="foot">Your paper spinners are on the last two pages.</p>
+</section>
+
+<!-- 2. Quick start -->
+<section class="page" aria-label="Quick start">
+  <span class="eyebrow">Quick Start</span>
+  <h1>Get playing, fast!</h1>
+  <p class="lead">One narrator tells the story, everyone else plays a character.</p>
+  <ol class="steps">
+    <li><span class="n">1</span><div><h3>Narrator sets the scene</h3><p>Say where everyone is and what is happening.</p></div></li>
+    <li><span class="n">2</span><div><h3>Players say what they want to do</h3><p>“Gus wants to try to calm Bonnie down.”</p></div></li>
+    <li><span class="n">3</span><div><h3>Narrator names a symbol</h3><p>“Give me a <strong class="k-kind">Kindness</strong> spin!”</p></div></li>
+    <li><span class="n">4</span><div><h3>Spin your spinners</h3><p>Any matching symbol is a success!</p></div></li>
+  </ol>
+  <div class="dark" style="display:flex;align-items:center;gap:3cqw;margin-top:6cqw">
+    <span class="tile kind md"><svg aria-hidden="true"><use href="#i-kind"/></svg></span>
+    <b style="font-size:var(--fs-body)">OR</b>
+    <span class="tile wild md"><svg aria-hidden="true"><use href="#i-wild"/></svg></span>
+    <p>Match the symbol or spin a <span class="y">Wild</span> to succeed!</p>
+  </div>
+  <div class="note">
+    <h4>No match? No problem!</h4>
+    <p>The Narrator adds a <strong class="twist-word">Twist</strong>. Something changes, and the story keeps moving.</p>
+  </div>
+</section>
+
+<!-- 3. The symbols -->
+<section class="page" aria-label="The symbols">
+  <span class="eyebrow">Spinner Spaces</span>
+  <h1>The Symbols</h1>
+  <p class="lead">Each spinner will have at least one of these four symbols.</p>
+  <div class="cards">
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Focus</h3><p class="sub">Thinking and figuring out</p><p class="eg">Riddles, maps, finding clues</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Effort</h3><p class="sub">Might and movement</p><p class="eg">Climbing, running, lifting, chasing</p></div></div>
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Kindness</h3><p class="sub">Feelings and connection</p><p class="eg">Comforting, making friends, being brave</p></div></div>
+    <div class="card c-gold"><span class="tile wild"><svg aria-hidden="true"><use href="#i-wild"/></svg></span><div><h3>Wild</h3><p class="sub">Matches any symbol</p><p class="eg">Counts as whatever is asked for</p></div></div>
+  </div>
+</section>
+
+<!-- 4. World spinner: set the odds -->
+<section class="page" aria-label="World spinner: set the odds">
+  <span class="eyebrow">World Spinner</span>
+  <h1>Set the Odds</h1>
+  <p class="lead">Before you play, make one World Spinner. It decides how often things go right.</p>
+  <ol class="steps plain">
+    <li><span class="n">1</span><p class="txt">Take one blank spinner</p></li>
+    <li><span class="n">2</span><p class="txt">Draw a <strong class="k-wild">Wild</strong> in two spaces</p></li>
+    <li><span class="n">3</span><p class="txt">Draw one <strong class="k-focus">Focus</strong>, <strong class="k-effort">Effort</strong>, &amp; <strong class="k-kind">Kindness</strong> on the spinner</p></li>
+    <li><span class="n">4</span><p class="txt">Leave one space blank for now</p></li>
+  </ol>
+  <div class="tile-row" style="margin-top:6cqw" aria-label="A finished World Spinner: Focus, Effort, Kindness, Wild, Wild, and one blank space">
+    <span class="tile focus"><svg><use href="#i-focus"/></svg></span>
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+    <span class="tile wild"><svg><use href="#i-wild"/></svg></span>
+    <span class="tile wild"><svg><use href="#i-wild"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+  </div>
+  <div class="dark" style="margin-top:6cqw"><p>2 Wild spaces + 1 of each symbol = a 50% chance to succeed on every spin.</p></div>
+</section>
+
+<!-- 5. Customize the world -->
+<section class="page" aria-label="Customize the world">
+  <span class="eyebrow">World Spinner</span>
+  <h1>Customize the World</h1>
+  <p class="lead">Fill in the last space of the World Spinner.</p>
+  <div class="cards">
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Mystery World</h3><p>More puzzles, riddles, and detective stories.</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Action World</h3><p>Extra chases, races, and big adventures.</p></div></div>
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Friendship World</h3><p>All about making friends and helping others.</p></div></div>
+    <div class="card c-gold"><span class="tile wild"><svg aria-hidden="true"><use href="#i-wild"/></svg></span><div><h3>Forgiving World</h3><p>Great for telling stories where things work out.</p></div></div>
+  </div>
+  <div class="note">
+    <h4>This is all you need to start!</h4>
+    <p>Tell the story with just the World Spinner before adding more.</p>
+  </div>
+</section>
+
+<!-- 6. Example of play 1 -->
+<section class="page" aria-label="Example of play, part 1">
+  <span class="eyebrow">Example of Play</span>
+  <h1 style="margin-bottom:5cqw">The Harbor Rescue</h1>
+  <div class="chat">
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">The sun is shining on Port Blossom Isle. Gus the Bus sees Bonnie the Bulldozer has a broken tread. “Go away!” Bonnie yells. What do you want to do?</p></div>
+    <div class="msg p"><p class="bubble">Gus wants to honk gently and ask her why she’s upset.</p><span class="avatar green" aria-label="Player">P</span></div>
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">Perfect. Spin for <strong class="k-kind">Kindness</strong> for Gus to make a friendly connection.</p></div>
+    <div class="spin-strip twist" role="img" aria-label="The spinner lands on Effort. No match: Twist!">
+      <span class="side">Spin</span>
+      <span class="box"><span class="tile effort md"><svg><use href="#i-effort"/></svg></span></span>
+      <span class="result">TWIST!</span>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Example of play 2 -->
+<section class="page" aria-label="Example of play, part 2">
+  <div class="chat">
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">Bonnie grumbles a hello, but turns to drive away. She has a nasty wobble in her wheels.</p></div>
+    <div class="msg p"><p class="bubble">Can Gus look to see what’s making her so wobbly?</p><span class="avatar green" aria-label="Player">P</span></div>
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">Great idea. Spin for <strong class="k-focus">Focus</strong>!</p></div>
+    <div class="spin-strip" role="img" aria-label="The spinner lands on Wild. Success!">
+      <span class="side">Spin</span>
+      <span class="box"><span class="tile wild md"><svg><use href="#i-wild"/></svg></span></span>
+      <span class="result">SUCCESS!</span>
+    </div>
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">Oh no, there’s a stone stuck in her tread. She’s not letting anyone help.</p></div>
+    <div class="msg p dots"><p class="bubble" aria-label="The player thinks">•••</p><span class="avatar green" aria-label="Player">P</span></div>
+  </div>
+</section>
+
+<!-- 8. Character spinner: make it yours -->
+<section class="page" aria-label="Character spinner: make it yours">
+  <span class="eyebrow">Character Spinner</span>
+  <h1>Make It Yours</h1>
+  <p class="lead">Every character gets their own spinner. It starts blank and you choose how it grows.</p>
+  <ol class="steps plain">
+    <li><span class="n">1</span><p class="txt">Take one blank spinner</p></li>
+    <li><span class="n">2</span><p class="txt">Pick <strong class="k-focus">Focus</strong>, <strong class="k-effort">Effort</strong>, or <strong class="k-kind">Kindness</strong></p></li>
+    <li><span class="n">3</span><p class="txt">Draw that symbol in one space</p></li>
+    <li><span class="n">4</span><p class="txt">Leave the other spaces blank for now</p></li>
+  </ol>
+  <div class="tile-row" style="margin-top:6cqw" aria-label="A new Character Spinner: one Focus space and five blank spaces">
+    <span class="tile focus"><svg><use href="#i-focus"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+  </div>
+  <div class="dark" style="margin-top:6cqw"><p>You can add a Character Spinner any time that character is part of the spin.</p></div>
+</section>
+
+<!-- 9. Watch them grow -->
+<section class="page" aria-label="Character spinner: watch them grow">
+  <span class="eyebrow">Character Spinner</span>
+  <h1>Watch Them Grow</h1>
+  <p class="lead">When your character does something big, the Narrator can let you draw a new symbol.</p>
+  <h3 style="font:600 var(--fs-h3)/1.2 var(--display);margin:0 0 .6cqw">This is Gus the Bus</h3>
+  <p style="font-size:var(--fs-lead);line-height:1.4;margin-bottom:2.4cqw">Gus is very kind, a little clever, and still has room to grow.</p>
+  <div class="tile-row" aria-label="Gus's spinner: three Kindness, one Focus, two blank">
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+    <span class="tile focus"><svg><use href="#i-focus"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+    <span class="tile blank"><svg><use href="#i-blank"/></svg></span>
+  </div>
+  <h3 style="font:600 var(--fs-h3)/1.2 var(--display);margin:5cqw 0 .6cqw">This is Bonnie the Bulldozer</h3>
+  <p style="font-size:var(--fs-lead);line-height:1.4;margin-bottom:2.4cqw">Bonnie tackles problems with pure power, but she can also be curious and thoughtful.</p>
+  <div class="tile-row" aria-label="Bonnie's spinner: four Effort, one Focus, one Kindness">
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile effort"><svg><use href="#i-effort"/></svg></span>
+    <span class="tile focus"><svg><use href="#i-focus"/></svg></span>
+    <span class="tile kind"><svg><use href="#i-kind"/></svg></span>
+  </div>
+  <div class="note">
+    <h4>A full spinner isn’t the goal</h4>
+    <p>We are looking for characters who have developed in their own way. A blank space is just another <strong class="twist-word">Twist</strong>.</p>
+  </div>
+</section>
+
+<!-- 10. Playing a character -->
+<section class="page" aria-label="Playing a character">
+  <span class="eyebrow">For Players</span>
+  <h1 style="margin-bottom:6cqw">Playing a Character</h1>
+  <ol class="steps">
+    <li><span class="n">1</span><div><h3>Talk like your character</h3><p>Instead of "I say hi," try "Hi! I'm Gus!" It's more fun, and it's how you bring them to life.</p></div></li>
+    <li><span class="n">2</span><div><h3>There's no wrong answer</h3><p>Whatever you try, the story finds a way to use it. That's what spinning is for.</p></div></li>
+    <li><span class="n">3</span><div><h3>Ask “What if…?”</h3><p>Not sure what your character would do? Just say what you're thinking. The Narrator will help.</p></div></li>
+    <li><span class="n">4</span><div><h3>Cheer for a <span class="twist-word">Twist</span>, too</h3><p>A miss isn't losing, it's a new part of the story. Some of the best moments come from a <span class="twist-word">Twist</span>.</p></div></li>
+  </ol>
+  <div class="note" style="margin-top:12cqw">
+    <h4>Your character acts however you want</h4>
+    <p>There's no rule book for who your character is, only what your character can do.</p>
+  </div>
+</section>
+
+<!-- 11. Team up -->
+<section class="page" aria-label="Team up">
+  <span class="eyebrow">Team Up</span>
+  <h1>Better Together</h1>
+  <p class="lead">When two characters work together, spin both Character Spinners, plus the World Spinner.</p>
+  <div class="chat">
+    <div class="msg p peach"><p class="bubble">Gus is going to push the log!</p><span class="avatar orange" aria-label="Gus's player">G</span></div>
+    <div class="msg p"><p class="bubble">And Bonnie will push Gus!</p><span class="avatar green" aria-label="Bonnie's player">B</span></div>
+    <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble">That’s a lot of power! Everyone spin for <strong class="k-effort">Effort</strong>.</p></div>
+    <div class="spin-strip" role="img" aria-label="Three spinners land on blank, Effort and Focus. One Effort matches: success!">
+      <span class="side">Spin</span>
+      <span class="box">
+        <span class="tile blank md"><svg><use href="#i-blank"/></svg></span>
+        <span class="tile effort md"><svg><use href="#i-effort"/></svg></span>
+        <span class="tile focus md"><svg><use href="#i-focus"/></svg></span>
+      </span>
+      <span class="result">SUCCESS!</span>
+    </div>
+  </div>
+</section>
+
+<!-- 12. Twists -->
+<section class="page" aria-label="What's a Twist?">
+  <span class="eyebrow">For the Narrator</span>
+  <h1>What’s a <span class="twist-word">Twist</span>?</h1>
+  <p class="lead">When a spin doesn't match, the story doesn't stop. The Narrator adds a <span class="twist-word">Twist</span> and something changes, but play keeps moving.</p>
+  <div class="cards">
+    <div class="card c-blue no-icon"><div><h3>It Gets Harder</h3><p class="sub">Something new stands in the way.</p><p class="eg">The bolt unscrewed, but now the tide is coming in!</p></div></div>
+    <div class="card c-purple no-icon"><div><h3>Someone Steps In</h3><p class="sub">Another character gets a chance to help.</p><p class="eg">Bonnie can only do it with help. What will Gus do?</p></div></div>
+    <div class="card c-red no-icon"><div><h3>It Costs Something</h3><p class="sub">It works, but not for free.</p><p class="eg">Bonnie is moving again but used up her tread patch.</p></div></div>
+  </div>
+  <div class="note" style="margin-top:6cqw"><p>A <strong class="twist-word">Twist</strong> is never “nothing happens.” Something always moves the story forward.</p></div>
+</section>
+
+<!-- 13. Narrator tips -->
+<section class="page" aria-label="Running the game">
+  <span class="eyebrow">For the Narrator</span>
+  <h1>Running the Game</h1>
+  <p class="lead">You don't need a script. A few habits make every session better.</p>
+  <ol class="steps">
+    <li><span class="n">1</span><div><h3>Ask, don’t tell.</h3><p>“What do you see?” or “What does your character do?” gets kids inventing instead of waiting.</p></div></li>
+    <li><span class="n">2</span><div><h3>Say yes when you can</h3><p>If an idea is fun and doesn't break the story, let it happen and spin for the parts that are uncertain.</p></div></li>
+    <li><span class="n">3</span><div><h3>Keep scenes short</h3><p>For young players, a scene that resolves in a few spins holds attention better than one that drags.</p></div></li>
+    <li><span class="n">4</span><div><h3>Follow their energy</h3><p>If they're excited about something you didn't plan, that's the story now.</p></div></li>
+  </ol>
+  <div class="note" style="margin-top:8cqw"><p>There's no wrong way to narrate. The goal is a story everyone's excited to keep telling.</p></div>
+</section>
+
+<!-- 14. Intro adventure -->
+<section class="page" aria-label="Intro adventure: The Tight Squeeze">
+  <span class="eyebrow">Intro Adventure</span>
+  <h1>The Tight Squeeze</h1>
+  <div class="msg n">
+    <span class="avatar" aria-label="Narrator">N</span>
+    <p class="bubble read"><span class="tag">READ ALOUD</span>“Sunny Port Blossom is buzzing! Tonight is the big festival on Granite Peak Isle, but the Skytide Bridge is still closed for repairs. Looks like everyone is going to have to ride Finley the Ferry, but Silas the Crane has already put the party supplies on Finley’s deck and there’s not enough room for anything else. What are we going to do!?”</p>
+  </div>
+  <div class="two-up">
+    <div class="card c-red"><div><h3>The Problem</h3><p>Finley can’t carry everyone and everything. If the bridge opened, the cars could drive over!</p></div></div>
+    <div class="card c-green"><div><h3>How It Ends</h3><p>Everyone reaches Granite Peak. If supplies don’t, the party changes to fit.</p></div></div>
+  </div>
+  <div class="dark" style="margin-top:var(--gap)">
+    <p class="label" style="display:flex;justify-content:space-between;align-items:center">The Chime Clock <span style="display:flex;gap:1.6cqw;color:var(--gold)"><svg width="18" height="18" style="width:4cqw;height:4cqw" aria-hidden="true"><use href="#i-bell"/></svg><svg width="18" height="18" style="width:4cqw;height:4cqw" aria-hidden="true"><use href="#i-bell"/></svg><svg width="18" height="18" style="width:4cqw;height:4cqw" aria-hidden="true"><use href="#i-bell"/></svg></span></p>
+    <p style="font-size:var(--fs-body)">The third chime signals the turning tide, when Finley must set off. Ring a chime when a scene is solved, on the second <span class="twist-word" style="color:#f0884f">Twist</span> in a scene, or when play slows down. Friends can always navigate back to an earlier scene.</p>
+  </div>
+  <p class="section-label">The Three Scenes</p>
+  <div class="scenes-row">
+    <div style="--s:var(--red-soft);--c:var(--red)"><span class="n">1</span>The Dock</div>
+    <div style="--s:var(--purple-soft);--c:var(--purple)"><span class="n">2</span>The Bridge</div>
+    <div style="--s:var(--blue-soft);--c:var(--blue)"><span class="n">3</span>Last Call</div>
+  </div>
+</section>
+
+<!-- 15. Meet the cast -->
+<section class="page" aria-label="Meet the cast">
+  <span class="eyebrow">The Cast</span>
+  <h1>Meet the Cast</h1>
+  <p class="section-label" style="margin-top:2cqw">Players choose a friend, draw a symbol</p>
+  <div class="cast-row">
+    <div class="card c-red"><span class="tile kind sm"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><h3>Gus the Bus</h3><p class="trait">Kindness</p><p>Kind, and always worried. “Rumble-bumble-hum-a-lum!”</p></div>
+    <div class="card c-blue"><span class="tile focus sm"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><h3>Tessa the Tram</h3><p class="trait">Focus</p><p>Organized and always on time. “Ting-a-ling!”</p></div>
+    <div class="card c-purple"><span class="tile effort sm"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><h3>Bonnie the Bulldozer</h3><p class="trait">Effort</p><p>Big, strong, and stubborn. “GRUMBLE-ROOOAR!”</p></div>
+  </div>
+  <p class="section-label">The Narrator plays</p>
+  <div class="cards">
+    <div class="card c-blue npc"><span class="tile focus sm"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Finley the Ferry</h3><p><b>Wants</b> Nobody left behind<br><b>Feels</b> Torn. The tide turns at the third chime.<br><b>Says</b> “If I wait I’m late. If I go, someone’s left!”</p></div></div>
+    <div class="card c-red npc"><span class="tile kind sm"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Silas the Crane</h3><p><b>Wants</b> His work to be acknowledged<br><b>Feels</b> Let down and unnoticed<br><b>Says</b> “I’m not moving until someone says thanks!”</p></div></div>
+    <div class="card c-purple npc"><span class="tile effort sm"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Pip, Skip, and Molly Dash</h3><p><b>Wants</b> To play with the bridge crew<br><b>Feels</b> Happy, unaware of any problem<br><b>Says</b> “You have to catch us first!”</p></div></div>
+  </div>
+</section>
+
+<!-- 16. Scene 1 -->
+<section class="page scene" aria-label="Scene 1: The Dock">
+  <div class="bells" aria-label="No chimes rung yet"><svg><use href="#i-bell"/></svg><svg><use href="#i-bell"/></svg><svg><use href="#i-bell"/></svg></div>
+  <span class="eyebrow">Scene 1 of 3</span>
+  <h1>The Dock</h1>
+  <p class="goal">Goal: Make room on the ferry.</p>
+  <div class="here"><span class="lbl">HERE</span><span class="chip c-blue">Finley</span><span class="chip c-red">Silas</span></div>
+  <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble read">“Finley’s deck is nearly full, and Silas’s supply tower takes up half of it. Silas stands by, arms crossed. Far off, someone giggles at the bridge. What do you do?”</p></div>
+  <p class="section-label">Spin Ideas</p>
+  <div class="cards">
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Focus</h3><p>Spot that Silas could restack to save space.</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Effort</h3><p>Shift some crates. A little room, but Silas frowns.</p></div></div>
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Kindness</h3><p>Thank Silas for his hard work. He’ll restack!</p></div></div>
+  </div>
+  <div class="twist-ideas">
+    <h4>Twist ideas</h4>
+    <p><b class="k-focus">It Gets Harder:</b> The tower wobbles. Catch it!</p>
+    <p><b class="k-effort">Someone Steps In:</b> Finley asks a friend to help.</p>
+  </div>
+  <div class="dark">
+    <p class="label">Ring the next chime when</p>
+    <p class="big">Silas restacks, or the second Twist happens.</p>
+    <p class="small"><span class="y">When it rings:</span> Finley sighs, “If only the bridge were open!”</p>
+    <hr>
+    <p class="small"><span class="y">Stuck?</span> Ask: Has anyone thanked Silas yet?</p>
+  </div>
+</section>
+
+<!-- 17. Scene 2 -->
+<section class="page scene" aria-label="Scene 2: The Bridge">
+  <div class="bells" aria-label="One chime rung"><svg class="on"><use href="#i-bell"/></svg><svg><use href="#i-bell"/></svg><svg><use href="#i-bell"/></svg></div>
+  <span class="eyebrow">Scene 2 of 3</span>
+  <h1>The Bridge</h1>
+  <p class="goal">Goal: Reopen the bridge so cars can drive over.</p>
+  <div class="here"><span class="lbl">HERE</span><span class="chip c-grey">Bridge crew</span><span class="chip c-purple">Dash cars</span></div>
+  <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble read">“The bridge crew’s trucks are zooming in circles instead of building! Three little cars are playing tag with them. What do you do?”</p></div>
+  <p class="section-label">Spin Ideas</p>
+  <div class="cards">
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Focus</h3><p>Spot that the Dash cars love a good race.</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Effort</h3><p>Race the Dash cars. Win and they’ll stop!</p></div></div>
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Kindness</h3><p>Invite them to play once the bridge is done.</p></div></div>
+  </div>
+  <div class="twist-ideas">
+    <h4>Twist ideas</h4>
+    <p><b class="k-kind">It Costs Something:</b> They stop, but you play one round.</p>
+    <p><b class="k-focus">It Gets Harder:</b> More vehicles join the game!</p>
+  </div>
+  <div class="dark">
+    <p class="label">Ring the next chime when</p>
+    <p class="big" style="font-weight:400">The crew is back at work, or the second Twist happens.</p>
+    <hr>
+    <p class="small"><span class="y">Stuck?</span> Default: the Dash cars are playing with the crew.</p>
+  </div>
+</section>
+
+<!-- 18. Scene 3 -->
+<section class="page scene" aria-label="Scene 3: Last Call">
+  <div class="bells" aria-label="Two chimes rung"><svg class="on"><use href="#i-bell"/></svg><svg class="on"><use href="#i-bell"/></svg><svg><use href="#i-bell"/></svg></div>
+  <span class="eyebrow">Scene 3 of 3</span>
+  <h1>Last Call</h1>
+  <p class="goal">Goal: Get everyone and everything ready to sail.</p>
+  <div class="here"><span class="lbl">HERE</span><span class="chip c-blue">Finley</span><span class="chip c-red">Silas</span><span class="chip c-purple">Dash cars, if the bridge is open</span></div>
+  <div class="msg n"><span class="avatar" aria-label="Narrator">N</span><p class="bubble read">“Almost time! The bell tower is about to ring, and Finley’s engine hums. What’s the plan?”</p></div>
+  <p class="section-label">Spin Ideas</p>
+  <div class="cards">
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Focus</h3><p>Show Finley a plan: two trips fit the tide.</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Effort</h3><p>Load, stack, and push everything into place.</p></div></div>
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Kindness</h3><p>Cheer up anyone who feels left behind.</p></div></div>
+  </div>
+  <div class="twist-ideas">
+    <h4>Twist ideas</h4>
+    <p><b class="k-focus">It Gets Harder:</b> One last crate won’t fit!</p>
+    <p><b class="k-kind">It Costs Something:</b> A crate of supplies falls overboard.</p>
+  </div>
+  <div class="dark">
+    <p class="label">Ring the last chime when</p>
+    <p class="big">Everything is aboard, or the tide turns. Friends first!</p>
+    <p class="small" style="margin-top:1.4cqw"><span class="y">Not solved?</span> Silas’s extra supplies wait. A shut bridge means the crew and cars can’t ride, so the party moves to them.</p>
+    <hr style="width:100%">
+    <p class="small"><span class="y">Stuck?</span> Ask: What plan would let Finley make two trips?</p>
+  </div>
+</section>
+
+<!-- 19. Ways to win -->
+<section class="page scene" aria-label="Ways to win">
+  <div class="bells" aria-label="All three chimes rung"><svg class="on"><use href="#i-bell"/></svg><svg class="on"><use href="#i-bell"/></svg><svg class="on"><use href="#i-bell"/></svg></div>
+  <span class="eyebrow">Resolving the Story</span>
+  <h1>Ways to Win</h1>
+  <p class="goal" style="font-weight:400">Any idea that works is a good idea.</p>
+  <div class="cards">
+    <div class="card c-red"><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><div><h3>Stack</h3><p>Thank Silas. He restacks and makes room!</p></div></div>
+    <div class="card c-purple"><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><div><h3>Help</h3><p>Reopen the bridge. The cars drive over!</p></div></div>
+    <div class="card c-blue"><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><div><h3>Wait</h3><p>Show Finley a plan. He waits for a second trip.</p></div></div>
+  </div>
+  <div class="note dashed" style="margin-top:var(--gap)">
+    <p><b>Say yes</b> to little ideas, like squeezing small things into gaps.</p>
+    <p style="margin-top:1.4cqw"><b>Fix one: good. Fix two: great. Fix all three: perfect!</b></p>
+  </div>
+  <div class="twist-ideas">
+    <h4>Secrets to Find <span style="font-size:.7em;color:var(--muted)">Reveal when asked</span></h4>
+    <p>• <b>Silas:</b> A real thank-you gets him restacking.</p>
+    <p>• <b>Dash cars:</b> They aren’t bad, they just want to play.</p>
+    <p>• <b>Finley:</b> He waits once if the plan fits the tide.</p>
+  </div>
+  <div class="dark">
+    <p class="label" style="font:600 var(--fs-h3)/1.2 var(--display);text-transform:none;letter-spacing:0">The Party: Friends First!</p>
+    <ul>
+      <li>Tide turns? Everyone rides. Extra stuff waits.</li>
+      <li>Can't ride? The party moves to them.</li>
+      <li>Short on stuff? Make decorations, be the band!</li>
+      <li>Then everyone draws a new symbol on their spinner.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 20. Back cover / quick reference -->
+<section class="page back" aria-label="Quick reference">
+  <img class="logo" src="../assets/logo.png" alt="QUBES" width="759" height="185">
+  <div class="panel sym">
+    <div><svg class="k-focus" aria-hidden="true"><use href="#i-focus"/></svg><span><b class="k-focus">Focus</b> thinks it through</span></div>
+    <div><svg class="k-effort" aria-hidden="true"><use href="#i-effort"/></svg><span><b class="k-effort">Effort</b> pushes forward</span></div>
+    <div><svg class="k-kind" aria-hidden="true"><use href="#i-kind"/></svg><span><b class="k-kind">Kindness</b> helps a friend</span></div>
+    <div><svg style="color:var(--gold)" aria-hidden="true"><use href="#i-wild"/></svg><span><b class="k-wild">Wild</b> always counts</span></div>
+  </div>
+  <div class="lower">
+    <div class="panel">
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Set the Scene</h3></li>
+        <li><span class="n">2</span><h3>Say what you do</h3></li>
+        <li><span class="n">3</span><h3>Name a symbol</h3></li>
+        <li><span class="n">4</span><h3>Spin your spinners</h3></li>
+      </ol>
+    </div>
+    <div class="panel match">
+      <h3>Match or Wild? That’s a success</h3>
+      <p>No match? The Narrator adds a <span class="twist-word">Twist</span> to the story.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 21. Print & play: make your spinners -->
+<section class="page" aria-label="Make your spinners">
+  <span class="eyebrow">Print &amp; Play</span>
+  <h1>Make Your Spinners</h1>
+  <p class="lead" style="margin-bottom:2.6cqw">This edition uses paper spinners instead of cubes and stickers. Each spinner has six spaces, just like a cube has six faces.</p>
+  <p class="section-label" style="margin-top:0">You need</p>
+  <div class="need">
+    <div>The spinner page</div>
+    <div>A pencil</div>
+    <div>A paperclip</div>
+    <div>Crayons or markers</div>
+  </div>
+  <p class="section-label">How to spin</p>
+  <div class="howto">
+    <ol class="steps">
+      <li><span class="n">1</span><div><h3>Clip on</h3><p>Put the pencil point through the paperclip, right on the center dot.</p></div></li>
+      <li><span class="n">2</span><div><h3>Hold the pencil straight</h3><p>Keep the point still on the dot.</p></div></li>
+      <li><span class="n">3</span><div><h3>Flick the paperclip</h3><p>It has to go all the way around at least once.</p></div></li>
+      <li><span class="n">4</span><div><h3>Read the space</h3><p>The far end of the clip points to your result. On a line? Spin again.</p></div></li>
+    </ol>
+    <svg class="demo" viewBox="-100 -100 200 200" role="img" aria-label="A paperclip resting on a spinner, held in the center by a pencil point">
+      <use href="#spinner" x="-100" y="-100" width="200" height="200"/>
+      <g fill="none" stroke="#7d7590" stroke-width="3.5" stroke-linejoin="round">
+        <rect x="-9" y="-78" width="18" height="90" rx="9"/>
+        <rect x="-4.5" y="-68" width="9" height="70" rx="4.5"/>
+      </g>
+      <circle r="6" fill="#c84f14" stroke="#2a2240" stroke-width="2"/>
+    </svg>
+  </div>
+  <p class="section-label">How to draw the symbols</p>
+  <div class="draw-key">
+    <div><span class="tile focus"><svg aria-hidden="true"><use href="#i-focus"/></svg></span><b class="k-focus">Focus</b>A magnifying glass</div>
+    <div><span class="tile effort"><svg aria-hidden="true"><use href="#i-effort"/></svg></span><b class="k-effort">Effort</b>A lightning bolt</div>
+    <div><span class="tile kind"><svg aria-hidden="true"><use href="#i-kind"/></svg></span><b class="k-kind">Kindness</b>A heart</div>
+    <div><span class="tile wild"><svg aria-hidden="true"><use href="#i-wild"/></svg></span><b class="k-wild">Wild</b>A star</div>
+  </div>
+  <div class="note" style="margin-top:3cqw">
+    <h4>Spinning more than one?</h4>
+    <p>Spin each one. If any of them lands on the symbol, or on a Wild, it’s a success.</p>
+  </div>
+</section>
+
+<!-- 22. Spinner sheet -->
+<section class="page sheet" aria-label="Spinner sheet">
+  <h1>Your Spinners</h1>
+  <p class="lead">Draw symbols in the dotted circles as the rules tell you. Print more of this page for more players.</p>
+  <div class="spinners">
+    <div class="spinner"><p class="name">World Spinner</p><svg role="img" aria-label="Blank six-space spinner"><use href="#spinner"/></svg></div>
+    <div class="spinner"><p class="name">Character:<span class="blankline"></span></p><svg role="img" aria-label="Blank six-space spinner"><use href="#spinner"/></svg></div>
+    <div class="spinner"><p class="name">Character:<span class="blankline"></span></p><svg role="img" aria-label="Blank six-space spinner"><use href="#spinner"/></svg></div>
+    <div class="spinner"><p class="name">Character:<span class="blankline"></span></p><svg role="img" aria-label="Blank six-space spinner"><use href="#spinner"/></svg></div>
+  </div>
+  <p class="foot">QUBES Print &amp; Play · qubesgame.com</p>
+</section>
+
+</main>
+</body>
+</html>

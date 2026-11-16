@@ -17,8 +17,8 @@ Open `index.html` and search for each token below. The full list is also in a co
 |---|---|
 | `SIGNUP_FORM_URL` | Done: `https://forms.gle/jYykqNi9DFmof7pL7` |
 | `FEEDBACK_FORM_URL` | Post-session feedback form link |
-| `PRINT_AND_PLAY_PDF_URL` | Print-and-play rulebook PDF link |
-| `CUBE_TEMPLATE_URL` | Cube template / dice-sticker guide link |
+| `PRINT_AND_PLAY_PDF_URL` | Done: `downloads/qubes-print-and-play-{letter,a4}.pdf`, built from `rules/` (see below). |
+| `CUBE_TEMPLATE_URL` | Done: `downloads/qubes-spinners-{letter,a4}.pdf` (the last two rulebook pages). |
 | `CONTACT_EMAIL` | Done: `hello@qubesgame.com`, forwarded by Cloudflare Email Routing. |
 | `SITE_URL` | Done: `https://qubesgame.com` (custom domain, set by the `CNAME` file; DNS in Cloudflare). |
 | `[LOCATION / AVAILABILITY]` | Where and when in-person sessions happen |
@@ -28,6 +28,14 @@ Open `index.html` and search for each token below. The full list is also in a co
 When you replace a bracketed placeholder, you can also drop its `<span class="todo">` wrapper.
 
 **Cubes photo:** add `assets/cubes.png` (about 1200px wide, compressed), then swap the dashed placeholder box in the "What is QUBES?" section for the `<img>` tag given in the TODO comment above it.
+
+## Print & Play rulebook (`rules/`)
+
+`rules/index.html` is a print-friendly copy of the rulebook for remote playtesters, rewritten for paper spinners instead of cubes and stickers. **The Figma file is the master copy.** When the Figma rules change, update `rules/index.html` to match. `rules/SPINNER-CHANGES.md` lists every place the spinner edition differs from Figma.
+
+Each `<section class="page">` is one printed page, sized to fit both Letter and A4. After editing, rebuild the four PDFs in `downloads/` (Letter and A4, full rulebook and spinner pages only) by printing `rules/` from Chrome, or with any headless-Chrome PDF script. Check that every page still fits on one sheet.
+
+The page is `noindex` and is linked only from the "Playing remotely?" section, so the home page stays spoiler-free.
 
 ## Previewing locally
 
