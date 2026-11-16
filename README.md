@@ -21,9 +21,9 @@ Open `index.html` and search for each token below. The full list is also in a co
 | `CUBE_TEMPLATE_URL` | Done: `downloads/qubes-spinners-{letter,a4}.pdf` (the last two rulebook pages). |
 | `CONTACT_EMAIL` | Done: `hello@qubesgame.com`, forwarded by Cloudflare Email Routing. |
 | `SITE_URL` | Done: `https://qubesgame.com` (custom domain, set by the `CNAME` file; DNS in Cloudflare). |
-| `[LOCATION / AVAILABILITY]` | Where and when in-person sessions happen |
-| `[FREE / THANK-YOU GIFT]` | Whether it's free, or what testers get |
-| `[YOUR NAME]` | Your name, for the footer |
+| `[LOCATION / AVAILABILITY]` | Done: points people to email. |
+| `[FREE / THANK-YOU GIFT]` | Done: free, nothing to buy. |
+| `[YOUR NAME]` | Done: Garrett Button. |
 
 When you replace a bracketed placeholder, you can also drop its `<span class="todo">` wrapper.
 
