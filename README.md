@@ -4,7 +4,7 @@ A one-page static site that recruits playtesters for **QUBES**, a kids-first tab
 
 ```
 index.html        the page
-style.css         all styles (colours are tokens at the top)
+style.css         all styles (colors are tokens at the top)
 assets/           logo, symbols, favicon, link-preview image, fonts
 assets/fonts/     Fredoka + Nunito (SIL Open Font License, see OFL-*.txt)
 ```
