@@ -16,7 +16,7 @@ Open `index.html` and search for each token below. The full list is also in a co
 | Token | Replace with |
 |---|---|
 | `SIGNUP_FORM_URL` | Done: `https://forms.gle/jYykqNi9DFmof7pL7` |
-| `FEEDBACK_FORM_URL` | Post-session feedback form link |
+| `FEEDBACK_FORM_URL` | Done: `https://forms.gle/17asFQ3QQQjMHTze9` |
 | `PRINT_AND_PLAY_PDF_URL` | Done: `downloads/qubes-print-and-play-{letter,a4}.pdf`, built from `rules/` (see below). |
 | `CUBE_TEMPLATE_URL` | Done: `downloads/qubes-spinners-{letter,a4}.pdf` (the last two rulebook pages). |
 | `CONTACT_EMAIL` | Done: `hello@qubesgame.com`, forwarded by Cloudflare Email Routing. |
