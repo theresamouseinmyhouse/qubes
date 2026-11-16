@@ -15,7 +15,7 @@ Open `index.html` and search for each token below. The full list is also in a co
 
 | Token | Replace with |
 |---|---|
-| `SIGNUP_FORM_URL` | Sign-up form link (appears twice) |
+| `SIGNUP_FORM_URL` | Done: `https://forms.gle/jYykqNi9DFmof7pL7` |
 | `FEEDBACK_FORM_URL` | Post-session feedback form link |
 | `PRINT_AND_PLAY_PDF_URL` | Print-and-play rulebook PDF link |
 | `CUBE_TEMPLATE_URL` | Cube template / dice-sticker guide link |
