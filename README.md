@@ -17,7 +17,7 @@ Open `index.html` and search for each token below. The full list is also in a co
 |---|---|
 | `SIGNUP_FORM_URL` | Done: `https://forms.gle/jYykqNi9DFmof7pL7` |
 | `FEEDBACK_FORM_URL` | Done: `https://forms.gle/17asFQ3QQQjMHTze9` |
-| `PRINT_AND_PLAY_PDF_URL` | Done: `downloads/qubes-print-and-play-{letter,a4}.pdf`, built from `rules/` (see below). |
+| `PRINT_AND_PLAY_PDF_URL` | Done: the site links to https://gbutton.itch.io/qubes (suggested $5, free download option). The PDFs are built from `rules/` (see below) and uploaded to itch by hand. |
 | `CUBE_TEMPLATE_URL` | Done: `downloads/qubes-spinners-{letter,a4}.pdf` (the last two rulebook pages). |
 | `CONTACT_EMAIL` | Done: `hello@qubesgame.com`, forwarded by Cloudflare Email Routing. |
 | `SITE_URL` | Done: `https://qubesgame.com` (custom domain, set by the `CNAME` file; DNS in Cloudflare). |
